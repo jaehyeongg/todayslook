@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/logo_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/todayslooklogo"
+
+            />
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edittext_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_imageview"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/edittext_id"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorLightGray"
+                android:hint="Email_ID"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/edittext_password"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorLightGray"
+                android:hint="@string/password"
+                android:textStyle="bold"
+                android:inputType="textPassword"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edittext_linearlayout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/find_id_password_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="ID PW 찾기" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/email_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="E-MAIL로 로그인" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

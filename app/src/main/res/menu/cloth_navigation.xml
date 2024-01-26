@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_top"
+        android:title="Top" />
+    <item
+        android:id="@+id/nav_bottom"
+        android:title="Bottom" />
+    <item
+        android:id="@+id/nav_acc"
+        android:title="Accessories" />
+    <item
+        android:id="@+id/nav_outwear"
+        android:title="Outwear" />
+    <item
+        android:id="@+id/nav_shoes"
+        android:title="Shoes" />
+</menu>

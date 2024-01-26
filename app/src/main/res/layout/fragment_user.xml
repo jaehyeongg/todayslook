@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/account_iv_profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_account" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/follow"
+                android:id="@+id/account_btn_follow_signout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/account_iv_profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/account_btn_follow_signout"
+                android:layout_toRightOf="@id/account_iv_profile"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="POST" />
+
+                    <TextView
+                        android:id="@+id/account_postTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/follower_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FOLLOWER" />
+
+                    <TextView
+                        android:id="@+id/account_follower_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/following_linearlayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FOLLOWING" />
+
+                    <TextView
+                        android:id="@+id/account_following_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/closest"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="옷장"
+            android:textColor="@color/black"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/account_recylerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</layout>

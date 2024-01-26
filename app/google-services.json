@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "545805721102",
+    "project_id": "todayslook-82ffd",
+    "storage_bucket": "todayslook-82ffd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545805721102:android:6c89f9b6843573bd8a665f",
+        "android_client_info": {
+          "package_name": "com.example.todayslook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-UaHG66UhWrw7phd8ZKqKcBkkJzfMlYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
